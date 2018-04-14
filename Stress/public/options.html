@@ -277,6 +277,7 @@ $(document).ready(function(){
     var counter = 0;
     for (var i = 0; i < 100; i++) {
       var works = false;
+      if (helpers[i][2] == zipcode.substring(0, 4))
       if (helpers[i][4] == stress || helpers[i][5] == stress || helpers[i][6]==stress)
         if(helpers[i][3] == preference || preference == "Either")
         {
